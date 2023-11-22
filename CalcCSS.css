@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.form-box {
+    height: 100px;
+    width: 50%;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-box input {
+    width: 95%;
+    height: 40px;
+    font-size: 1.5rem;
+    margin: auto;
+    margin-top: 10px;
+    direction: ltr;  /* 텍스트 방향 왼쪽 -> 오른쪽 */
+    text-align: right; /* 숫자 오른쪽 정렬 */
+}
+.form-box .form {
+    direction: ltr;  /* 텍스트 방향 왼쪽 -> 오른쪽 */
+    text-align: right; /* 숫자 오른쪽 정렬 */
+}
+
+.calculator {
+    margin: auto;
+    display: flex;
+    width: 50%; height: 300px;
+    border: 1px solid purple;
+}
+.calculator div { 
+    height: 100%;
+}
+.calculator div:first-child {
+    width : 75%
+}
+.calculator div:last-child {
+    width : 25%
+}
+.calculator div ul {
+    display: flex;
+    height: 25%;
+
+}
+
+.calculator .dial-btn ul{
+    margin: 3px;
+}
+.calculator .dial-btn ul li {
+    margin: 3px;
+}
+.calculator .operators ul{
+    margin: 3px;
+}
+.calculator .operators ul li {
+    margin: 1.5px;
+}
+
+.calculator div ul li {
+    width: 33.33%; height: 100%;
+    border: 0px solid yellow;
+    border-radius: 10px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 75px;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+.calculator div ul li:hover {
+    background: gray;
+    color: white;
+}
+.calculator div ul .hover {
+    background: gray;
+    color: white;
+}
+
+.calculator .operators ul {
+    height: 100%;
+    border: 0px solid yellow;
+    flex-direction: column;
+}
+.calculator .operators ul li {
+    border: 0px solid yellow;
+    height: 25%; width: 100%;
+    cursor: pointer;
+}
